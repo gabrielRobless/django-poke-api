@@ -5,7 +5,7 @@ python -m venv venv-prueba
 # activar el entorno 
 venv-prueba/Scripts/Activate 
 # clonar el repo
-git clone 
+git clone https://github.com/gabrielRobless/django-poke-api.git
 
 # ejecutar el archivo requirements.txt
 pip install -r requirements.txt
