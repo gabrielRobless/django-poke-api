@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from pokemons.views import pokemon_list, pokemon_detail,health_check
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('pokemons/', pokemon_list, name='pokemon_list'),
+    path('pokemon/<int:pokemon_id>/', pokemon_detail, name='pokemon_detail'),
+    path('health/', health_check, name='health_check'),
 ]
+
